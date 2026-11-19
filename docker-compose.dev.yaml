@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:16
+  redis:
+    image: redis:7
+  rabbitmq:
+    image: rabbitmq:latest
+  memcached:
+    image: memcached:latest
+  mongo:
+    image: mongo:latest
+  valkey:
+    image: valkey/valkey:latest
+  nats:
+    image: nats:latest
+  minio:
+    image: minio/minio:latest
+  adminer:
+    image: adminer:latest
+  pgadmin4:
+    image: dpage/pgadmin4:latest
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:latest
+  kibana:
+    image: docker.elastic.co/kibana/kibana:latest
+  all-in-one:
+    image: jaegertracing/all-in-one:latest
+  kong:
+    image: kong:latest
+  traefik:
+    image: traefik:latest
+  graphql-engine:
+    image: hasura/graphql-engine:latest
+  server:
+    image: temporalio/server:latest
+  verdaccio:
+    image: verdaccio/verdaccio:latest
