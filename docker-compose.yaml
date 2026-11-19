@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_PASSWORD: example
+  redis:
+    image: redis:latest
+  rabbitmq:
+    image: rabbitmq:latest
+  memcached:
+    image: memcached:latest
+  mailhog:
+    image: mailhog/mailhog:latest
+  web:
+    build: ./services/web
+  api:
+    build: ./services/api
